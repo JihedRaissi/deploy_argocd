@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/black-ji/deploy_argocd.git
-    path: covoiturage-registry-service
+    path: covoiturage-registry-service/files
     targetRevision: master
   destination:
     server: https://kubernetes.default.svc
