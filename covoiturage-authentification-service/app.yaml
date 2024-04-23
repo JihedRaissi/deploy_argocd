@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: covoiturage-authentification-service
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/black-ji/deploy_argocd.git
+    path: covoiturage-authentification-service/files
+    targetRevision: master
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: covoiturage-authentfication-service
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
