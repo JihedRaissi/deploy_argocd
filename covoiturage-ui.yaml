@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: covoiturage-ui
+  labels:
+    app: covoiturage-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: covoiturage-ui
+  template:
+    metadata:
+      labels:
+        app: covoiturage-ui
+    spec:
+      containers:
+        - name: covoiturage-ui
+          image: covoiturage-ui:1.0
+          imagePullPolicy: Never
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 3000
