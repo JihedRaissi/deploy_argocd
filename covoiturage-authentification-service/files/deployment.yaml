@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: covoiturage-authentification-service
-  namespace: covoiturage-config-server
+  namespace: covoiturage-registry-service
   labels:
     app: covoiturage-authentification-service
 spec:
