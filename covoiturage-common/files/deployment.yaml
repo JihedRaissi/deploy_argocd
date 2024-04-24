@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: covoiturage-common
-  namespace: covoiturage-common
+  namespace: mongodb
   labels:
     app: covoiturage-common
 spec:
