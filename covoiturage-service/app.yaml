@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: covoiturage-service
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/black-ji/deploy_argocd.git
+    path: covoiturage-service/files
+    targetRevision: master
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: covoiturage-service
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
