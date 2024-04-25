@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: covoiturage-messenger-service
-          image: covoiturage-messenger-service:1.0
+          image: covoiturage-messenger-service:1.1
           imagePullPolicy: Never
           resources:
             limits:
