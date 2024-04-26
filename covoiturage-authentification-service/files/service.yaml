@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: covoiturage-authentification-service
+  namespace: argocd
   labels:
     app: covoiturage-authentification-service
 spec:
