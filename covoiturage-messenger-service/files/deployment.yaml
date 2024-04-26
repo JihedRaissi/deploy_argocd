@@ -25,3 +25,10 @@ spec:
               cpu: "500m"
           ports:
             - containerPort: 8090
+            env:
+              - name: SPRING_DATA_MONGODB_HOST
+                value: "mongodb"
+              - name: SPRING_DATA_MONGODB_PORT
+                value: "27017"
+              - name: SPRING_DATA_MONGODB_DATABASE
+                value: "admin"
