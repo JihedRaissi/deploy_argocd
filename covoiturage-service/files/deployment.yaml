@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: covoiturage-service
-  namespace: covoiturage-service
+  namespace: argocd
   labels:
     app: covoiturage-service
 spec:
