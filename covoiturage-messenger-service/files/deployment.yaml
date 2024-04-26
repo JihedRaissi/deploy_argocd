@@ -32,3 +32,19 @@ spec:
               value: "27017"
             - name: SPRING_DATA_MONGODB_DATABASE
               value: "admin"
+            - name: EUREKA_INSTANCE_LEASE_RENEWAL_INTERVAL_IN_SECONDS
+              value: "1"
+            - name: EUREKA_INSTANCE_LEASE_EXPIRATION_DURATION_IN_SECONDS
+              value: "2"
+            - name: EUREKA_INSTANCE_HOSTNAME
+              value: "eureka-server"
+            - name: EUREKA_CLIENT_HEALTHCHECK_ENABLED
+              value: "false"
+            - name: EUREKA_CLIENT_LEASE_DURATION
+              value: "5"
+            - name: EUREKA_CLIENT_FETCH_REGISTRY
+              value: "true"
+            - name: EUREKA_CLIENT_REGISTER_WITH_EUREKA
+              value: "true"
+            - name: EUREKA_CLIENT_SERVICE_URL_DEFAULT_ZONE
+              value: "http://eureka-server:8761/eureka/"
