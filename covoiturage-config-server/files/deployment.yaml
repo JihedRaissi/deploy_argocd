@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: covoiturage-config-server
+  name: covoiturage-config
   namespace: argocd
   labels:
-    app: covoiturage-config-server
+    app: covoiturage-config
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: covoiturage-config-server
+      app: covoiturage-config
   template:
     metadata:
       labels:
-        app: covoiturage-config-server
+        app: covoiturage-config
     spec:
       containers:
-        - name: covoiturage-config-server
+        - name: covoiturage-config
           image: covoiturage-config-server:1.0
           imagePullPolicy: Never
           resources:

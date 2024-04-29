@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: covoiturage-config-server
+  name: covoiturage-config
   namespace: argocd
 spec:
   project: default
