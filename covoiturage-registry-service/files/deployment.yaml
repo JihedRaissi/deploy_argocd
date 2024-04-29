@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: covoiturage-registry-service
+  name: eureka-server
   namespace: argocd
   labels:
-    app: covoiturage-registry-service
+    app: eureka-server
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: covoiturage-registry-service
+      app: eureka-server
   template:
     metadata:
       labels:
-        app: covoiturage-registry-service
+        app: eureka-server
     spec:
       containers:
-        - name: covoiturage-registry-service
+        - name: eureka-server
           image: covoiturage-registry-service:1.1
           imagePullPolicy: Never
           resources:
