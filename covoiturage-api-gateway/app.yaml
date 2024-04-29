@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: covoiturage-api-gateway
+  name: covoiturage-api
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/black-ji/deploy_argocd.git
-    path: covoiturage-api-gateway
+    path: covoiturage-api-gateway/files
     targetRevision: master
   destination:
     server: https://kubernetes.default.svc
