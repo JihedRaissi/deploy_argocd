@@ -10,6 +10,6 @@ spec:
   selector:
     app: covoiturage-config
   ports:
-    - port: 8811
-      targetPort: 8811
+    - port: 8888
+      targetPort: 8888
       nodePort: 30504
