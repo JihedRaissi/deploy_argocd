@@ -25,7 +25,3 @@ spec:
               cpu: "500m"
           ports:
             - containerPort: 8091
-          env:
-            SPRING_SECURITY_USER_NAME: admin
-            SPRING_SECURITY_USER_PASSWORD: adminUserForAccessingActuatorEndpoints0000
-            SPRING_SECURITY_USER_ROLES: ADMIN
