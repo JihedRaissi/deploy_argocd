@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: covoiturage-admin-console-server
+  name: admin-dashboard
   namespace: argocd
   labels:
-    app: covoiturage-admin-console-server
+    app: admin-dashboard
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: covoiturage-admin-console-server
+      app: admin-dashboard
   template:
     metadata:
       labels:
-        app: covoiturage-admin-console-server
+        app: admin-dashboard
     spec:
       containers:
         - name: covoiturage-admin-console-server
-          image: covoiturage-admin-console-server:1.0
+          image: covoiturage-admin-console-server:1.1
           imagePullPolicy: Never
           resources:
             limits:
