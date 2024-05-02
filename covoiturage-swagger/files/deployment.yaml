@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: covoiturage-swagger
-          image: covoiturage-swagger:1.0
+          image: covoiturage-swagger:1.1
           imagePullPolicy: Never
           resources:
             limits:
