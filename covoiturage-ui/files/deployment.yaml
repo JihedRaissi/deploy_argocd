@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: covoiturage-ui
-          image: localhost:5000/covoiturage-ui:2.0
+          image: 10.72.0.82:5000/covoiturage-ui:2.0
           imagePullPolicy: IfNotPresent
           resources:
             limits:
