@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: covoiturage-ui
-          image: jiihed/covoiturage-ui:1.0
+          image: jiihed/covoiturage-ui:1.1
           imagePullPolicy: IfNotPresent
           resources:
             limits:
