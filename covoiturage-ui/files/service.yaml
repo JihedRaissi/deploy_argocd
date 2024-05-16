@@ -6,10 +6,9 @@ metadata:
   labels:
     app: covoiturage-ui
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: covoiturage-ui
   ports:
     - port: 3000
       targetPort: 80
-      nodePort: 30509
