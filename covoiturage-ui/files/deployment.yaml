@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: covoiturage-ui
-          image: covoiturage2/covoiturage-ui:1.1
+          image: jiihed/covoiturage-ui:1.1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
