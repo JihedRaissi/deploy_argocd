@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: covoiturage-swagger
-          image: jiihedcovoiturage-swagger:1.1
+          image: jiihed/covoiturage-swagger:1.1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8088
