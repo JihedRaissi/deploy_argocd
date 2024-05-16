@@ -19,9 +19,5 @@ spec:
         - name: covoiturage-config
           image: jiihed/covoiturage-config-server:1.1
           imagePullPolicy: IfNotPresent
-          resources:
-            limits:
-              memory: "512Mi"
-              cpu: "500m"
           ports:
             - containerPort: 8888

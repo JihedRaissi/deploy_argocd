@@ -19,9 +19,5 @@ spec:
         - name: covoiturage-admin-console-server
           image: jiihed/covoiturage-admin-console-server:1.1
           imagePullPolicy: IfNotPresent
-          resources:
-            limits:
-              memory: "256Mi"
-              cpu: "500m"
           ports:
             - containerPort: 7777

@@ -19,9 +19,5 @@ spec:
         - name: co-api-gateway
           image: jiihed/covoiturage-api-gateway:1.1
           imagePullPolicy: IfNotPresent
-          resources:
-            limits:
-              memory: "512Mi"
-              cpu: "500m"
           ports:
             - containerPort: 8443

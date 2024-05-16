@@ -19,10 +19,6 @@ spec:
         - name: covoiturage-messenger-service
           image: jiihed/covoiturage-messenger-service:1.1
           imagePullPolicy: IfNotPresent
-          resources:
-            limits:
-              memory: "256Mi"
-              cpu: "500m"
           ports:
             - containerPort: 8090
           env:

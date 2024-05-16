@@ -19,9 +19,5 @@ spec:
         - name: covoiturage-ui
           image: covoiturage2/covoiturage-ui:1.1
           imagePullPolicy: IfNotPresent
-          resources:
-            limits:
-              memory: "512Mi"
-              cpu: "500m"
           ports:
             - containerPort: 80

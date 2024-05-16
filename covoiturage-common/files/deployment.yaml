@@ -19,10 +19,6 @@ spec:
         - name: covoiturage-common
           image: jiihed/covoiturage-common:1.1
           imagePullPolicy: IfNotPresent
-          resources:
-            limits:
-              memory: "256Mi"
-              cpu: "500m"
           ports:
             - containerPort: 8081
           env:
