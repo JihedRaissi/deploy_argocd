@@ -17,8 +17,8 @@ spec:
     spec:
       containers:
         - name: covoiturage-admin-console-server
-          image: covoiturage-admin-console-server:1.1
-          imagePullPolicy: Never
+          image: jiihed/covoiturage-admin-console-server:1.1
+          imagePullPolicy: IfNotPresent
           resources:
             limits:
               memory: "256Mi"

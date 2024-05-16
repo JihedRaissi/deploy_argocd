@@ -17,8 +17,8 @@ spec:
     spec:
       containers:
         - name: covoiturage-service
-          image: covoiturage-service:1.1
-          imagePullPolicy: Never
+          image: jiihed/covoiturage-service:1.1
+          imagePullPolicy: IfNotPresent
           resources:
             limits:
               memory: "512Mi"

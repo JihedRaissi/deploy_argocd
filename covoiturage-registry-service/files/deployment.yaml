@@ -17,8 +17,8 @@ spec:
     spec:
       containers:
         - name: eureka-server
-          image: covoiturage-registry-service:1.1
-          imagePullPolicy: Never
+          image: jiihed/covoiturage-registry-service:1.1
+          imagePullPolicy: IfNotPresent
           resources:
             limits:
               memory: "256Mi"

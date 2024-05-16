@@ -17,8 +17,8 @@ spec:
     spec:
       containers:
         - name: co-api-gateway
-          image: covoiturage-api-gateway:1.1
-          imagePullPolicy: Never
+          image: jiihed/covoiturage-api-gateway:1.1
+          imagePullPolicy: IfNotPresent
           resources:
             limits:
               memory: "512Mi"

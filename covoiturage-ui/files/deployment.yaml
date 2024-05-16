@@ -17,8 +17,8 @@ spec:
     spec:
       containers:
         - name: covoiturage-ui
-          image: covoiturage2/covoiturage-ui:2.0
-          imagePullPolicy: Never
+          image: covoiturage2/covoiturage-ui:1.1
+          imagePullPolicy: IfNotPresent
           resources:
             limits:
               memory: "512Mi"

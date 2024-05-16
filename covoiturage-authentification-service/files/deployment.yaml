@@ -17,8 +17,8 @@ spec:
     spec:
       containers:
         - name: covoiturage-authentification-service
-          image: covoiturage-authentification-service:1.1
-          imagePullPolicy: Never
+          image: jiihed/covoiturage-authentification-service:1.1
+          imagePullPolicy: IfNotPresent
           resources:
             limits:
               memory: "512Mi"
